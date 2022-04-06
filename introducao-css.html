@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao CSS</title>
+    <!-- ctrl+; ou Shift + alt + A é comentário HTML -->
+    <style>
+        /* ctrl+; ou Shift + alt + A é comentário CSS 
+        Regras CSS
+        Selector {propriedade:valor;}*/
+        p {
+            color: #222;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Versão detalhada */
+            border-top-width: 2px;
+            border-top-style: solid;
+            border-bottom-width: 4px;
+            border-bottom-style: double;
+
+            /* versão simplificada */
+            border-top: 2px solid;
+            border-bottom: 4px double;
+        }
+
+        body {
+            background-color: rgb(196, 168, 250);
+        }
+
+        h1 {
+            background-color: rgb(255, 0, 0);
+            color: rgb(169, 204, 250);
+            font-family: 'algerian';
+            text-align: center;
+            border-radius: 40px;
+            letter-spacing: 2px;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trabalhando com CSS no HTML</h1>
+        <hr>
+    </header>
+    <main>
+        <h2>HTML</h2>
+            <p style="color: orangered; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil?</p>
+            <p style="color: brown; text-align: right; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat in rem soluta amet? Ut.</p>
+        <h2>CSS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat in rem soluta amet? Ut.</p>
+        <h2>JS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nihil?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione placeat in rem soluta amet? Ut.</p>
+    </main>
+    <footer>
+       <!-- CSS inline -> dentro de cada Tag de abertura do HTML usando atriburo style=""
+
+        CSS interno/onpage -> regras de CSS criadas na própria página HTML dentro do <head> usando a tag <style>, a principal vantagem é de formatar várias tags de uma vez só
+
+        CSS externo ->  -->
+    </footer>
+</body>
+</html>

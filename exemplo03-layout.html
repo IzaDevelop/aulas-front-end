@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout</title>
+<style>
+
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+/* Importante para o uso da medida rem */
+html {
+    font-size: 15px;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#container {
+    box-shadow: black 0 0 5px;
+    padding: 5px;
+}
+
+header {
+    background-color: coral;
+    text-align: center;
+    height: 100px;
+}
+
+/* CSS reset, remoção dos valores padrões*/
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+nav {
+    background-color: lightsalmon;
+}
+
+article {
+    padding: 10px;
+}
+
+#coluna1 {
+    background-color: aquamarine
+}
+
+#coluna2 {
+    background-color: aqua;
+}
+
+#coluna3 {
+    background-color: cornflowerblue;
+}
+
+footer {
+    text-align: center;
+    background-color: firebrick;
+}
+
+/* design responsivo */
+
+/* telas a partir de 700px */
+@media screen and (min-width: 700px) {
+    html {
+        font-size: 18px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    /* flex container */
+    main {
+        display: flex;
+        flex-wrap: wrap; /* permite quebra de linha*/
+    }
+
+    #coluna1, #coluna2 {
+       width: 50%;
+    }
+}
+
+@media screen and (min-width: 822px) {
+    html {
+        font-size: 20px;
+    }
+
+    #container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    #coluna1, #coluna2, #coluna3 {
+        width: 33.33%;
+    } 
+}
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Site XYZ</h1>
+            <nav>
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+            </nav>
+        </header>
+        <main>
+            <article id="coluna1">
+                <h2>UM</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus tempore laborum recusandae sint nesciunt, magni neque. Itaque sit perferendis, corrupti dignissimos voluptates ratione odio tempora illum temporibus voluptatum enim natus nihil quibusdam fuga quia cum eveniet labore nisi, laborum quaerat vitae deleniti, at impedit recusandae. Temporibus aspernatur vero velit.</p>
+            </article>
+            <article id="coluna2">
+                <h2>DOIS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus tempore laborum recusandae sint nesciunt, magni neque. Itaque sit perferendis, corrupti dignissimos voluptates ratione odio tempora illum temporibus voluptatum enim natus nihil quibusdam fuga quia cum eveniet labore nisi, laborum quaerat vitae deleniti, at impedit recusandae. Temporibus aspernatur vero velit.</p>
+            </article>
+            <article id="coluna3">
+                <h2>TRÊS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus tempore laborum recusandae sint nesciunt, magni neque. Itaque sit perferendis, corrupti dignissimos voluptates ratione odio tempora illum temporibus voluptatum enim natus nihil quibusdam fuga quia cum eveniet labore nisi, laborum quaerat vitae deleniti, at impedit recusandae. Temporibus aspernatur vero velit.</p>
+            </article>
+        </main>
+        <footer>
+            <p>Layout de exemplo</p>
+        </footer>
+    </div>
+</body>
+</html>

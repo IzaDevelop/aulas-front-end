@@ -1,0 +1,119 @@
+/* Regras CSS */
+
+/* Alterando o box model para todos os elemento da página */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* pseudo-elemento ::after e ::before permitem adicionar conteúdo antes e depois */
+h2::before {
+    content: ":(";
+}
+
+h2::after{
+    content: ":)";
+}
+
+/* Seletor tag */
+body {
+    background-image: url(../imagens/tarde.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Seletor id utiliza # */
+#container {
+    /* rgba e hexadecimal aceita transparencia */
+    background-color: #FFFAFA80;
+    background-color: rgba(255, 255, 255, 0.37); 
+    width: 70%;
+    margin: auto;
+    padding: 20px; /* espaçamento/preebchimento interno */
+    border-radius: 50px;
+    box-shadow: 15px 15px 10px #00000080;
+}
+
+img {
+    /* Torna a imagem flexivel */
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+figure {
+    max-width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    text-transform: uppercase;
+    border-bottom: solid 2px;
+}
+
+h2 {
+    color: #fff;
+    text-shadow: red 2px 2px 1px, blue -2px -2px 1px ;
+}
+
+h3 {
+    color: #222;
+    text-shadow: rgb(255, 222, 222) 2px 2px 1px, rgb(167, 167, 189) -2px -2px 1px ;
+}
+
+
+/* Seletor class */
+.centralizar {
+    text-align: center;
+}
+
+.sombra-texto {
+    text-shadow: #222 3px 3px 2px;
+}
+
+.campo-arredondado {
+    border-radius: 10px;
+}
+
+.destaque {
+    background-color: aquamarine;
+    border: solid 1px;
+    padding: 1px;
+}
+
+/* Seletor descendente */
+/* regra inicial do link */
+nav a {
+    background-color: #222;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px; /* primiro valor cima baixo e segundo valor direita esquerda */
+    display: inline-block;
+    width: 33.33%;
+}
+
+/* regra de acionamento do link */
+/* pseudo-classe :houver */
+nav a:hover {
+    background-color: aquamarine;
+    color: purple;
+}
+
+footer {
+    color: #222;
+    font-size: 20px;
+    text-align: center;
+}
+
+figure img {
+    filter: grayscale(100%);
+}
+
+figure img:hover {
+    transition: 2s;
+    filter: grayscale(0%);
+}
